@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Salchipotato: El mejor sabor urbano en Manizales. Descubre sabores que enamoran desde el primer bocado.">
+  <meta name="keywords" content="salchipapas, burritos, comida urbana, manizales, picadas, Salchipotato, sabor joven">
+  <meta name="author" content="Salchipotato">
+  <title>Salchipotato | ¡Puro Sabor que Se Siente en Cada Mordida!</title>
+  <style>
+    /* Reset y tipografía */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+    }
+    header img {
+      height: 60px;
+      border-bottom: 4px solid #FFC107;
+    }
+
+    /* Sección de impacto */
+    #impact-section {
+      position: relative;
+      background-image: url('Imge/Picada1.jpg'); /* Cambiar por la ruta de la imagen */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: background 0.5s ease-in-out;
+    }
+    #impact-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    #impact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+    }
+    #impact-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #FFC107;
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+      margin-bottom: 20px;
+    }
+    #impact-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+    }
+    .cta-button {
+      background-color: #FFC107;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color .3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #e0a800;
+      transform: scale(1.1);
+    }
+
+    @media(max-width:768px) {
+      #impact-title { font-size: 2rem; }
+      #impact-text { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+    <header class="logo-header">
+        <img src="Imge/LogoS.png" alt="Logo Salchipotato" class="logo-img">
+      </header>
+
+      <style>
+        /* Estilos para el logo */
+        .logo-header {
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        .logo-img {
+          width: 260px; /* Tamaño inicial */
+          max-width: 90%;
+          height: auto;
+          transition: transform 0.3s ease, width 0.3s ease;
+        }
+        
+        /* Opcional: animar al pasar el mouse */
+        .logo-img:hover {
+          transform: scale(1.05);
+        }
+        </style>
+        
+
+  <div class="audio-control" id="audio-control">
+    <i id="audio-icon" class="fas fa-pause"></i>
+    <span id="audio-label">Pausar Música</span>
+    <audio id="audio" src="Audi/Blurry.mp3" autoplay loop></audio>
+  </div>
+  
+  
+  
+  
+
+  <style>
+    /* ===== Botón Flotante de Audio ===== */
+    .audio-control {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 40px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      z-index: 10000;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    .audio-control:hover {
+      background-color: rgba(255, 215, 0, 0.9);
+    }
+    .audio-control i {
+      color: white;
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+    .audio-control span {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    /* Ondas sutiles */
+    .audio-control::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+      animation: wave 4s infinite;
+      pointer-events: none;
+    }
+    @keyframes wave {
+      0%,100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.2); opacity: 0.1; }
+    }
+    </style>
+    
+    
+    
+
+    <section id="impact-section">
+      <div id="impact-content">
+        <h1 id="impact-title">Los verdaderos monstruos de salchipapas.</h1>
+        <h3>Y además... somos leyendas del sabor. Fast food, asados, mexicana y más... ¡Lo tenemos todo pa' romper el antojo!</h3>
+        <a href="https://wa.me/573007097006?text=Hola%20👋%20deseo%20pedir%20algo..." target="_blank">
+          <button class="cta-button">¡Pide ahora por WhatsApp!</button>
+        </a>
+      </div>
+    </section>
+    
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = document.getElementById('impact-title');
+      const text = document.getElementById('impact-text');
+
+      // Aparecer el título y el texto con efecto
+      setTimeout(() => {
+        title.style.opacity = '1';
+        title.style.transform = 'translateY(0)';
+      }, 500);
+
+      setTimeout(() => {
+        text.style.opacity = '1';
+        text.style.transform = 'translateY(0)';
+      }, 1500);
+    });
+  </script>
+
+<!-- Video intro -->
+
+<section id="video-salchipotato">
+    <div class="content">
+      <h2 class="salsa-title">¡O que tal un parche en Salchipotato Chipre: saborea la experiencia!</h2>
+      <div class="video-container">
+        <video src="Vide/Videoone.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <a href="https://www.ubicalo.com/empresa/manizales/salchipotato-chipre" target="_blank" class="cta-button">
+        Haz clic y conoce nuestra ubicación
+      </a>
+    </div>
+  </section>
+  
+  <style>
+    /* Fondo negro con figuras estilo callejero */
+    #video-salchipotato {
+      background: linear-gradient(180deg, #0b0b0b, #141414);
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+  
+    /* Título con fuente más gruesa, estilo comida callejera */
+    .salsa-title {
+      font-size: 3.5rem;
+      color: #D32F2F; /* Color de salsa tipo tomate */
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(179, 0, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.4);
+      margin-bottom: 50px;
+    }
+  
+    /* Contenedor del video */
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 3px solid white;
+      transition: border-color 0.3s ease;
+      margin-bottom: 30px;
+    }
+  
+    .video-container:hover {
+      border-color: #ffeb3b; /* Cambio de borde a amarillo al pasar el mouse */
+    }
+  
+    .video-container video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 9/16; /* Vertical formato móvil */
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  
+    /* Botón de llamado a la acción */
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #D32F2F;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 40px;
+      box-shadow: 0 0 20px #D32F2F;
+      animation: pulse 2s infinite;
+      transition: background 0.3s, transform 0.3s;
+      margin-top: 20px;
+    }
+  
+    .cta-button:hover {
+      background-color: #cc3700;
+      transform: scale(1.05);
+    }
+  
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #D32F2F; }
+      50% { box-shadow: 0 0 25px #D32F2F; }
+      100% { box-shadow: 0 0 10px #D32F2F; }
+    }
+  
+    /* Figuras tipo calcomanías y medallas callejeras pequeñas */
+    #video-salchipotato::before,
+    #video-salchipotato::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: moveShapes 5s infinite alternate;
+      z-index: 1;
+    }
+  
+    #video-salchipotato::before {
+      top: 10%;
+      left: 10%;
+      transform: rotate(0deg);
+    }
+  
+    #video-salchipotato::after {
+      top: 60%;
+      left: 60%;
+      transform: rotate(45deg);
+    }
+  
+    @keyframes moveShapes {
+      0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      50% {
+        transform: translateX(20px) rotate(45deg);
+      }
+      100% {
+        transform: translateX(0) rotate(90deg);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .salsa-title {
+        font-size: 2.5rem;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+  
+
+  <!-- Galeria -->
+
+  <section id="gallery-section">
+    <div class="floating-icons">
+      <div class="icon lightning"></div>
+      <div class="icon joystick"></div>
+      <div class="icon trophy"></div>
+      <div class="icon skull"></div>
+    </div>
+  
+    <div id="gallery-content">
+      <h2 class="gallery-title">¡Imágenes Reales, Comida Brutal!</h2>
+      <div class="slider">
+        <img src="Imge/Hamb.jpg" class="slide active">
+        <img src="Imge/Carnes2.jpg" class="slide">
+        <img src="Imge/Perr.jpg" class="slide">
+        <img src="Imge/Salchipapa3.jpg" class="slide">
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Estilos sección galería */
+    #gallery-section {
+      position: relative;
+      background-color: #000;
+      overflow: hidden;
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    /* Iconos flotantes */
+    .floating-icons .icon {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #D32F2F;
+      opacity: 0.7;
+      border-radius: 50%;
+      animation: float 8s infinite;
+      mix-blend-mode: lighten;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .lightning {
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/733/733635.png'); /* Ícono rayo */
+    }
+  
+    .joystick {
+      top: 30%;
+      left: 70%;
+      animation-delay: 2s;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/857/857681.png'); /* Ícono joystick */
+    }
+  
+    .trophy {
+      top: 60%;
+      left: 10%;
+      animation-delay: 4s;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/401/401061.png'); /* Ícono trofeo */
+    }
+  
+    .skull {
+      top: 80%;
+      left: 80%;
+      animation-delay: 6s;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/809/809957.png'); /* Ícono calavera */
+    }
+  
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+  
+    /* Título galería */
+    .gallery-title {
+      font-size: 2.8rem;
+      color: #FFC107;
+      margin-bottom: 50px;
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: fadeInTitle 1.5s forwards;
+    }
+  
+    @keyframes fadeInTitle {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Slider */
+    .slider {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #FFC10744;
+    }
+  
+    .slider img {
+      width: 100%;
+      display: none;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  
+    .slider img.active {
+      display: block;
+      animation: fade 1s ease-in-out;
+    }
+  
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  
+    @media(max-width:768px) {
+      .gallery-title { font-size: 2rem; }
+    }
+  </style>
+  
+  <script>
+    // Slider automático cada 2 segundos
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 2000);
+  </script>
+  
+<script>
+  const audio = document.getElementById('audio');
+  const control = document.getElementById('audio-control');
+  const icon = document.getElementById('audio-icon');
+  const label = document.getElementById('audio-label');
+
+  control.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      icon.classList.replace('fa-play', 'fa-pause');
+      label.textContent = 'Pausar Música';
+    } else {
+      audio.pause();
+      icon.classList.replace('fa-pause', 'fa-play');
+      label.textContent = 'Reproducir Música';
+    }
+  });
+
+  window.addEventListener('load', () => {
+    audio.play().catch(() => {
+      // Si el navegador bloquea autoplay
+      icon.classList.replace('fa-pause', 'fa-play');
+      label.textContent = 'Reproducir Música';
+    });
+  });
+</script>
+
+<!-- Whatsapp flotante -->
+
+ <!-- ===== Botón flotante de WhatsApp (aparece tras 28 segundos) ===== -->
+ <a href="https://wa.me/573007097006?text=Hola%20👋%20deseo%20pedir%20algo..." class="whatsapp-float hidden"
+ target="_blank" aria-label="Contáctanos por WhatsApp">
+ <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
+   class="whatsapp-icon">
+</a>
+
+<style>
+ .whatsapp-float {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   background: linear-gradient(145deg, #00d084, #00735a);
+   border-radius: 50%;
+   width: 90px;
+   height: 90px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999;
+   box-shadow: 0 0 25px rgba(0, 255, 170, 0.4);
+   animation: signalPulse 2.5s infinite ease-in-out;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .whatsapp-float:hover {
+   transform: scale(1.1);
+   box-shadow: 0 0 30px rgba(0, 255, 170, 0.6);
+ }
+
+ .whatsapp-icon {
+   width: 45px;
+   height: 45px;
+   filter: brightness(0) invert(1);
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ @keyframes signalPulse {
+   0% {
+     box-shadow: 0 0 0 0 rgba(0, 255, 170, 0.4);
+   }
+
+   50% {
+     box-shadow: 0 0 0 16px rgba(0, 255, 170, 0);
+   }
+
+   100% {
+     box-shadow: 0 0 0 0 rgba(0, 255, 170, 0);
+   }
+ }
+</style>
+
+<script>
+ // Mostrar el botón después de 28 segundos
+ setTimeout(() => {
+   document.querySelector('.whatsapp-float').classList.remove('hidden');
+ }, 4000);
+</script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const audio = document.getElementById('audio');
+      const control = document.getElementById('audio-control');
+      const icon = document.getElementById('audio-icon');
+      const label = document.getElementById('audio-label');
+    
+      // Establecer volumen inicial
+      audio.volume = 0.3;
+    
+      // Función para actualizar botón
+      function updateButton() {
+        if (audio.paused) {
+          icon.classList.remove('fa-pause');
+          icon.classList.add('fa-play');
+          label.textContent = 'Reproducir Música';
+        } else {
+          icon.classList.remove('fa-play');
+          icon.classList.add('fa-pause');
+          label.textContent = 'Pausar Música';
+        }
+      }
+    
+      // Manejar clic
+      control.addEventListener('click', function () {
+        if (audio.paused) {
+          audio.play().then(() => {
+            updateButton();
+          }).catch(err => {
+            console.log('Error al reproducir:', err);
+          });
+        } else {
+          audio.pause();
+          updateButton();
+        }
+      });
+    
+      // Actualizar botón al cargar
+      audio.addEventListener('play', updateButton);
+      audio.addEventListener('pause', updateButton);
+    });
+    </script>
+    
+    <!-- Productos -->
+
+    <section class="menu-section">
+        <h2 class="menu-title">Precios que sorprenden, carta para todos los gustos</h2>
+        
+        <div class="card-container">
+          <div class="menu-card">
+            <h3>Salchipapas</h3>
+            <p>Las más grandes y exquisitas salchipapas llenas de queso, salchicha y papa crocante para chuparse los dedos.</p>
+          </div>
+          
+          <div class="menu-card">
+            <h3>Hamburguesas</h3>
+            <p>Jugosas hamburguesas artesanales, con pan suave y una explosión de sabores en cada bocado.</p>
+          </div>
+          
+          <div class="menu-card">
+            <h3>Perros</h3>
+            <p>Perros calientes con salchichas premium, aderezos caseros y papitas crocantes para el toque final.</p>
+          </div>
+          
+          <div class="menu-card">
+            <h3>Mexicana</h3>
+            <p>Delicias mexicanas auténticas: tacos, burritos y nachos para que vivas el verdadero sabor callejero.</p>
+          </div>
+          
+          <div class="menu-card">
+            <h3>Asados</h3>
+            <p>Cortes de carne a la parrilla, jugosos, ahumados y servidos al punto perfecto para verdaderos amantes de la carne.</p>
+          </div>
+          
+          <div class="menu-card">
+            <h3>Bebidas 🍹🍺</h3>
+            <p>Jugos naturales en agua o leche, malteadas cremosas, limonadas exóticas
+               <br><span class="cerveza">¡Y una cervecita bien fría!</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+      /* Animación suave para el fondo tipo rombos */
+      @keyframes movePattern {
+        0% { background-position: 0 0; }
+        100% { background-position: 100px 100px; }
+      }
+      
+      /* Sección del menú */
+      .menu-section {
+        background-color: #fafafa;
+        background-image: 
+          linear-gradient(45deg, rgba(255, 223, 0, 0.2) 25%, transparent 25%),
+          linear-gradient(-45deg, rgba(255, 223, 0, 0.2) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, rgba(255, 223, 0, 0.2) 75%),
+          linear-gradient(-45deg, transparent 75%, rgba(255, 223, 0, 0.2) 75%);
+        background-size: 40px 40px;
+        background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+        animation: movePattern 30s linear infinite;
+        padding: 60px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      /* Título de la sección */
+      .menu-title {
+        font-size: 2.8rem;
+        color: #c0392b; /* Rojo salsa */
+        margin-bottom: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      /* Contenedor de las tarjetas */
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      /* Cada tarjeta */
+      .menu-card {
+        background-color: #fff;
+        border: 2px solid #f0f0f0;
+        border-radius: 16px;
+        padding: 25px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .menu-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+      }
+      
+      /* Texto de las tarjetas */
+      .menu-card h3 {
+        font-size: 1.7rem;
+        color: #2c3e50;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .menu-card p {
+        font-size: 1.05rem;
+        color: #555;
+        line-height: 1.6;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      /* Estilo especial para la cervecita */
+      .cerveza {
+        display: inline-block;
+        margin-top: 8px;
+        font-weight: 700;
+        color: #f39c12; /* Amarillo fuerte */
+        font-size: 1.1rem;
+      }
+      </style>
+      
+  <!-- Seccion mas comida -->
+
+  <section class="video-carousel-section">
+    <h1 class="Videos-titu">Ya rompimos algoritmos: Salchipotato es tendencia en redes sociales.</h1>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <video src="VideoSalc1/VideoS1.mp4" muted autoplay loop playsinline></video>
+        </div>
+        <div class="carousel-item">
+          <video src="VideoSalc2/VideoS2.mp4" muted autoplay loop playsinline></video>
+        </div>
+        <div class="carousel-item">
+          <video src="VideoSalc3/VideoS3.mp4" muted autoplay loop playsinline></video>
+        </div>
+        <div class="carousel-item">
+          <video src="VideoSalc4/VideoS4.mp4" muted autoplay loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  /* Sección de carrusel de videos */
+  .video-carousel-section {
+    background: #fafafa;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .Videos-titu{
+    color:black;
+  }
+  
+  /* Título con gradient y underline animado */
+  .carousel-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #c0392b, #e74c3c);
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .carousel-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background: #e74c3c;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  .carousel-title:hover::after {
+    width: 80px;
+    left: calc(50% - 40px);
+  }
+  
+  /* Contenedor del carrusel */
+  .carousel {
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Pista de items */
+  .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+  
+  /* Cada video en el carrusel */
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-item video {
+    width: 60%;               /* 40% reducido de tamaño */
+    aspect-ratio: 9 / 16;     /* vertical (portrait) */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .carousel-title { font-size: 2rem; }
+    .carousel-item video { width: 80%; }
+  }
+  </style>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const items = Array.from(track.children);
+    let current = 0;
+  
+    setInterval(() => {
+      current = (current + 1) % items.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+    }, 3000);
+  });
+  </script>
+
+  <!-- Equipo de salchipotato -->
+  
+  <section class="team-section">
+    <h2 class="team-title">Y ni hablar de nuestro equipo legendario.</h2>
+    <div class="team-container">
+      <div class="team-item effect-1">
+        <img src="Imge/Equi1.jpg" alt="Juan Pérez">
+        <div class="team-overlay">
+          <p>Parte del equipo...</p>
+          <h3>Salchipotato Chef</h3>
+        </div>
+      </div>
+      <div class="team-item effect-2">
+        <img src="Imge/Equi2.jpg" alt="María Gómez">
+        <div class="team-overlay">
+          <p>Parte del equipo...</p>
+          <p>Salchipotato Chef</p>
+        </div>
+      </div>
+      <div class="team-item effect-3">
+        <img src="Imge/Equi3.jpg" alt="Carlos Fernández">
+        <div class="team-overlay">
+          <p>Parte del equipo...</p>
+          <p>Salchipotato Chef</p>
+        </div>
+      </div>
+      <div class="team-item effect-4">
+        <img src="Imge/Equi4.jpg" alt="Ana Torres">
+        <div class="team-overlay">
+          <p>Parte del equipo...</p>
+          <p>Salchipotato Admin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  /* Fondo casi oscuro con patrones muy sutiles */
+  .team-section {
+    background: #111;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(241,196,15,0.1) 2px, transparent 0),
+      radial-gradient(circle at 80% 70%, rgba(241,196,15,0.1) 2px, transparent 0);
+    background-size: 100px 100px;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .team-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: #f39c12;
+    margin-bottom: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  /* Grid de miembros */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Base de tarjeta */
+  .team-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #222;
+    cursor: pointer;
+  }
+  
+  /* Overlay de texto */
+  .team-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .team-item:hover .team-overlay { opacity: 1; }
+  
+  /* Imagen común */
+  .team-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+  }
+  
+  /* Efecto 1: escala + ligera rotación */
+  .effect-1:hover img {
+    transform: scale(1.08) rotate(2deg);
+  }
+  
+  /* Efecto 2: de gris a color */
+  .effect-2 img {
+    filter: grayscale(100%);
+  }
+  .effect-2:hover img {
+    filter: none;
+    transform: scale(1.05);
+  }
+  
+  /* Efecto 3: desplazamiento y sombra */
+  .effect-3:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  }
+  
+  /* Efecto 4: skew + brillo */
+  .effect-4:hover img {
+    transform: skewY(-3deg) scale(1.05);
+    filter: brightness(1.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .team-title { font-size: 2rem; }
+    .team-item img { transition: none; }
+  }
+  </style>
+  
+ <!-- Sección tendencias -->
+<section id="trending-dishes">
+  <h2 class="trending-section-title">Platos en tendencia Salchipotato</h2>
+
+  <div class="trending-video-item">
+    <h3 class="trending-dish-name">Salchi Parrilla: Dale play y conócela…</h3>
+    <div class="trending-video-container">
+      <video src="Videsalp/Salchi-Parrilla.mp4" controls poster="Vide/Salchi-Parrilla.jpg"></video>
+    </div>
+  </div>
+
+  <div class="trending-video-item">
+    <h3 class="trending-dish-name">Maicitos Rancheros: Dale play y conócelos…</h3>
+    <div class="trending-video-container">
+      <video src="VideMaic/Maicitos-Ranche.mp4" controls poster="Vide/Maicitos-Ranche.jpg"></video>
+    </div>
+  </div>
+
+  <div class="trending-video-item">
+    <h3 class="trending-dish-name">Salchi Desmechada: Dale play y conócela...​</h3>
+    <div class="trending-video-container">
+      <video src="VideDesmechaSal/Salchi-Desmechada.mp4" controls poster="Vide/Salchi-Desmechada.jpg"></video>
+    </div>
+  </div>
+
+  <div class="trending-video-item">
+    <h3 class="trending-dish-name">Play y antójate con nuestro arsenal de deliciosos platos...</h3>
+    <div class="trending-video-container">
+      <video src="VideTodoSal/Todo-Salchipotato.mp4" controls poster="Vide/salchipapa-especial.jpg"></video>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Solo afecta a #trending-dishes */
+  #trending-dishes {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #trending-dishes .trending-section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  #trending-dishes .trending-video-item {
+    margin-bottom: 40px;
+  }
+  #trending-dishes .trending-dish-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  #trending-dishes .trending-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #trending-dishes .trending-video-container video {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    display: block;
+  }
+  /* Botón de reproducción animado */
+  #trending-dishes .trending-video-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: url('play-button.png') no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+    animation: trending-pulse 2s infinite;
+  }
+  @keyframes trending-pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  }
+  /* Responsividad */
+  @media (max-width: 768px) {
+    #trending-dishes .trending-video-container {
+      max-width: 360px;
+    }
+    #trending-dishes .trending-section-title {
+      font-size: 1.8em;
+    }
+    #trending-dishes .trending-dish-name {
+      font-size: 1.3em;
+    }
+  }
+</style>
+
+<!-- Sección de Opiniones -->
+<section id="opiniones" style="background-color: #ffe600; padding: 50px 20px;">
+  <div class="opinions-header">
+    <img src="Imge/Burrito.png" alt="Cliente pensando" class="thought-avatar">
+    <div class="thought-bubble">Opiniones que hablan por nosotros</div>
+  </div>
+  <div class="opinions-list">
+    <div class="opinion-item">
+      <img src="Imge/Reseña1.png" alt="Opinión 1" class="opinion-img">
+    </div>
+    <div class="opinion-item">
+      <img src="Imge/Reseña2.png" alt="Opinión 2" class="opinion-img">
+    </div>
+    <div class="opinion-item">
+      <img src="Imge/Reseña3.png" alt="Opinión 3" class="opinion-img">
+    </div>
+    <div class="opinion-item">
+      <img src="Imge/Reseña4.png" alt="Opinión 4" class="opinion-img">
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Solo estilos para la sección de opiniones */
+  #opiniones {
+    background-color: #ffe600;
+  }
+  #opiniones .opinions-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  #opiniones .thought-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  #opiniones .thought-bubble {
+    background: #fff;
+    color: #333;
+    padding: 15px 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+    max-width: 80%;
+    line-height: 1.2;
+  }
+  /* Cola de la nube de pensamiento */
+  #opiniones .thought-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 30px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 20px 20px 0 0 #fff;
+  }
+
+  #opiniones .opinions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #opiniones .opinion-item {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  /* Estaggered animation delays */
+  #opiniones .opinion-item:nth-child(1) { animation-delay: 0.2s; }
+  #opiniones .opinion-item:nth-child(2) { animation-delay: 0.4s; }
+  #opiniones .opinion-item:nth-child(3) { animation-delay: 0.6s; }
+  #opiniones .opinion-item:nth-child(4) { animation-delay: 0.8s; }
+
+  #opiniones .opinion-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  #opiniones .opinion-img:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    #opiniones .thought-avatar {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    #opiniones .thought-bubble {
+      font-size: 1.5rem;
+      padding: 12px 20px;
+    }
+    #opiniones .opinion-item {
+      max-width: 100%;
+    }
+  }
+</style>
+
+    <!-- Sección Footer -->
+<section id="footer">
+  <div class="footer-content">
+    <h2 class="footer-title">Contacto</h2>
+    <p class="footer-copy">
+      © 2025 Salchipotato · Todos los derechos reservados · Hecho con 🤝
+      <a href="https://crisinnov.github.io/" target="_blank">CrisInnov</a>
+    </p>
+
+    <div class="footer-contacts">
+      <div class="contact-item">
+        <!-- Teléfono -->
+        <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M6.62 10.79a15.464 15.464 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1v3.75a1 1 0 0 1-1 1A17.93 17.93 0 0 1 2 6a1 1 0 0 1 1-1h3.75a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+        <a href="tel:+573007097006">300 709 7006</a>
+      </div>
+      <div class="contact-item">
+        <!-- Dirección -->
+        <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+        <address>Cra. 11 #7a-10, Manizales, Caldas</address>
+      </div>
+      <div class="contact-item">
+        <!-- Correo -->
+        <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+        <a href="mailto:salchipotato@tuta.io">salchipotato@tuta.io</a>
+      </div>
+      <div class="contact-item social">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100095505612202" target="_blank" title="Facebook">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/salchipotatosmanizales/" target="_blank" title="Instagram">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.75-.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Imágenes flotantes estilo comida -->
+  <div class="floating-images">
+    <img src="Imge/burrito2.jpg" alt="Snack flotante" class="float-img img1">
+    <img src="Imge/burrito2.jpg" alt="Bocado flotante" class="float-img img2">
+  </div>
+</section>
+
+<style>
+  /* Footer base */
+  #footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  #footer a { color: #fff; text-decoration: none; }
+  #footer a:hover { text-decoration: underline; }
+
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .footer-copy {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .contact-item address { font-style: normal; }
+  .social a { margin: 0 10px; }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  .contact-item .icon:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+
+  /* Imágenes flotantes */
+  .floating-images .float-img {
+    position: absolute;
+    width: 80px;
+    opacity: 0.8;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    z-index: 1;
+  }
+  .float-img.img1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float1 6s ease-in-out infinite;
+  }
+  .float-img.img2 {
+    top: 10%;
+    left: 10%;
+    animation: float2 6s ease-in-out infinite;
+  }
+
+  @keyframes float1 {
+    0%,100% { transform: translate(-50%, -50%) translateY(0) rotate(-5deg); }
+    50% { transform: translate(-50%, -50%) translateY(-15px) rotate(5deg); }
+  }
+  @keyframes float2 {
+    0%,100% { transform: translate(10%, 10%) translateY(0) rotate(5deg); }
+    50% { transform: translate(10%, 10%) translateY(15px) rotate(-5deg); }
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .footer-title { font-size: 1.6rem; }
+    .footer-contacts { flex-direction: column; gap: 20px; }
+    .icon { width: 40px; height: 40px; }
+    .floating-images .float-img { width: 60px; }
+  }
+</style>
+
+  
+  </body>
+
+</html>
