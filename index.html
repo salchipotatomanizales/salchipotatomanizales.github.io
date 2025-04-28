@@ -210,6 +210,117 @@
     });
   </script>
 
+  <!-- Sección de Carta del Restaurante -->
+<section id="carta" style="background-color: #111; padding: 60px 20px; text-align: center;">
+  <h2 style="color: white; font-size: 2.5rem; margin-bottom: 40px;">Nuestra Carta</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+    <div class="carta-item">
+      <img src="Imge/Cartaadverso.jpeg" alt="Carta Salchipotato 1" class="carta-img">
+    </div>
+    <div class="carta-item">
+      <img src="Imge/Cartareverso.jpeg" alt="Carta Salchipotato 2" class="carta-img">
+    </div>
+  </div>
+</section>
+
+<!-- Modal para ver imagen en grande -->
+<div id="modalCarta" class="modal-carta" onclick="cerrarModal()">
+  <span class="cerrar-modal">&times;</span>
+  <img id="imagenModal" class="contenido-modal">
+</div>
+
+<style>
+  /* Estilos de imágenes de la carta */
+  .carta-item {
+    flex: 1 1 300px;
+    max-width: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .carta-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s ease;
+  }
+
+  .carta-item:hover .carta-img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+  }
+
+  /* Estilos del Modal */
+  .modal-carta {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+  }
+
+  .contenido-modal {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    animation: zoomAnim 0.5s;
+    border-radius: 12px;
+  }
+
+  @keyframes zoomAnim {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
+
+  .cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .carta-item {
+      max-width: 90%;
+    }
+    .cerrar-modal {
+      font-size: 30px;
+    }
+  }
+</style>
+
+<script>
+  // Función para abrir imagen en modal
+  const imagenesCarta = document.querySelectorAll('.carta-img');
+  const modal = document.getElementById('modalCarta');
+  const imagenModal = document.getElementById('imagenModal');
+
+  imagenesCarta.forEach(img => {
+    img.addEventListener('click', function() {
+      modal.style.display = 'block';
+      imagenModal.src = this.src;
+    });
+  });
+
+  // Función para cerrar modal
+  function cerrarModal() {
+    modal.style.display = 'none';
+  }
+</script>
+
 <!-- Video intro -->
 
 <section id="video-salchipotato">
